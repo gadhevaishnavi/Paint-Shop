@@ -1,0 +1,239 @@
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 1200vw; /* Full width */
+  height: 500px; /* Default height */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual Slide */
+.slide {
+  position: absolute;
+  width: 100vw; /* Ensure full width */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Active Slide */
+.slide.active {
+  opacity: 1;
+}
+
+/* Slide Text */
+.slide-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Title */
+.slide-text h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Description */
+.slide-text p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    height: 400px; /* Reduce height */
+  }
+  
+  .slide-text h3 {
+    font-size: 20px;
+  }
+
+  .slide-text p {
+    font-size: 14px;
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    height: 300px; /* Reduce height */
+  }
+
+  .slide-text {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .slide-text h3 {
+    font-size: 18px;
+  }
+
+  .slide-text p {
+    font-size: 12px;
+  }
+}
+/* Container for slider content */
+.slider-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* Title animation */
+.slider-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Description animation */
+.slider-description {
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeInUp 2s ease-out forwards;
+  animation-delay: 0.5s;  /* Delay for description */
+}
+
+/* Keyframe for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframe for fade-in-up effect */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* slider.css */
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+/* Container for the entire slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Individual slide styling */
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Active slide */
+.slide.active {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Slide text container */
+.slide-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%; /* Ensure text container doesn't exceed viewport width */
+  box-sizing: border-box; /* Include padding in element's total width */
+}
+
+/* Slide title */
+.slide-text h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Slide description */
+.slide-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-text h3 {
+    font-size: 1.5em;
+  }
+  .slide-text p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-text {
+    bottom: 10%;
+    padding: 15px;
+  }
+  .slide-text h3 {
+    font-size: 1.2em;
+  }
+  .slide-text p {
+    font-size: 0.9em;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slider-text {
+  animation: fadeInUp 1s ease-in-out;
+}
+
