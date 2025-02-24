@@ -33,7 +33,7 @@ const FloatingIcon = () => {
         <FaWhatsapp size={25} />
         <span className="tooltip">+918378844361</span>
       </a>
-      <a href="tel:+7028773402" className="floatingicon call">
+      <a href="tel:+918378844361" className="floatingicon call">
         <FaPhoneAlt size={25} />
         <span className="tooltip">+918378844361</span>
       </a>

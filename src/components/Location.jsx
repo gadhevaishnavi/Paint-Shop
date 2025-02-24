@@ -29,7 +29,7 @@ const Location = () => {
           Malegaon Road, Nanded 413512
         </p>
         <h3>Email</h3>
-        <p>gayakwadshubham7028@gmail.com</p>
+        <p>shikhareram4@gmail.com</p>
       </div>
     </div>
   );
