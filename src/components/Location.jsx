@@ -21,8 +21,8 @@ const Location = () => {
         <h2>Contact Details</h2>
         <p>Get in touch with us today.</p>
         <h3>Call Us</h3>
-        <p>Mobile: 7028773402</p>
-        <p>Tel: +968 24050604</p>
+        <p>Mobile: 8378844361</p>
+        <p>Tel: 8378844361</p>
         <h3>Address</h3>
         <p>
           Raj Galaxy, Shop No 7, SBI Bank Opposite, <br />
