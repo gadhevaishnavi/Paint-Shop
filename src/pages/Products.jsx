@@ -35,9 +35,6 @@ const Product = () => {
           <div key={product._id} className="product-card">
             <img src={product.imageUrl} alt={product.name} className="product-image" />
             <h4>{product.name}</h4>
-            <p><strong>Brand:</strong> {product.brand}</p>
-            <p><strong>Price:</strong> {product.price}</p>
-            <p><strong>Weight:</strong> {product.weight}</p>
 
             <div className="button-container">
               <button 
@@ -54,3 +51,4 @@ const Product = () => {
 };
 
 export default Product;
+
