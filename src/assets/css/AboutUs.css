@@ -2,6 +2,8 @@
   background-color: #f3f4f6;
   padding: 4rem 1.5rem;
   text-align: center;
+  margin: 6rem auto 2rem; /* Centering with margin-top to avoid navbar overlap */
+  padding: 2rem;
 }
 
 .about-content {

@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 6rem auto 2rem; /* Centering with margin-top to avoid navbar overlap */
+  padding: 2rem;
   text-align: center;
 }
 

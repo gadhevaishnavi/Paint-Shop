@@ -1,5 +1,6 @@
 .services-section {
-  padding: 50px 20px;
+  margin: 6rem auto 2rem; /* Centering with margin-top to avoid navbar overlap */
+  padding: 2rem;
   background-color: #f4f4f4;
   text-align: center;
 }

@@ -1,8 +1,8 @@
 /* Main Container */
 .main-class {
   max-width: 600px;
-  margin: 80px auto; /* Centering with margin-top to avoid navbar overlap */
-  padding: 20px;
+  margin: 6rem auto 2rem; /* Centering with margin-top to avoid navbar overlap */
+  padding: 2rem;
   background: #f8fafc; /* Light gray background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

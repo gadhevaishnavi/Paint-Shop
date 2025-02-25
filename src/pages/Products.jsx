@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Loader from "../components/Loader";
-import '../assets/css/Product.css';
+import "../assets/css/Product.css";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [expandedProductId, setExpandedProductId] = useState(null); // State to track expanded product
+  const navigate = useNavigate();
 
-  // Fetch products from the API
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get("https://paint-backend-three.vercel.app/product/products");
-        setProducts(response.data); // Assuming the API returns an array of products
+        setProducts(response.data);
         setLoading(false);
       } catch (err) {
         setError("Failed to fetch products. Please try again later.");
@@ -24,24 +24,8 @@ const Product = () => {
     fetchProducts();
   }, []);
 
-  // Render loading state
-  if (loading) {
-    return <Loader />;
-  }
-
-  // Render error state
-  if (error) {
-    return <div className="error">{error}</div>;
-  }
-
-  // Toggle product description visibility
-  const toggleDescription = (id) => {
-    if (expandedProductId === id) {
-      setExpandedProductId(null); // Collapse the description if the same product is clicked
-    } else {
-      setExpandedProductId(id); // Expand the description
-    }
-  };
+  if (loading) return <Loader />;
+  if (error) return <div className="error">{error}</div>;
 
   return (
     <div className="container">
@@ -55,20 +39,12 @@ const Product = () => {
             <p><strong>Price:</strong> {product.price}</p>
             <p><strong>Weight:</strong> {product.weight}</p>
 
-            {/* Wrap buttons in the container */}
             <div className="button-container">
               <button 
                 className="view-detail-btn" 
-                onClick={() => toggleDescription(product._id)}>
-                {expandedProductId === product._id ? 'Hide Details' : 'View Details'}
+                onClick={() => navigate(`/product/${product._id}`)}> 
+                View Details
               </button>
-            </div>
-
-            {/* Conditionally render description */}
-            <div 
-              className={`description ${expandedProductId === product._id ? 'show' : ''}`}
-            >
-              {product.desc && <p><strong>Description:</strong> {product.desc}</p>}
             </div>
           </div>
         ))}

@@ -1,0 +1,106 @@
+/* ProductDetail.css */
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+/* Product Detail Container */
+.product-detail-container {
+  max-width: 800px;
+  margin: 6rem auto 2rem; /* Increased top margin for space */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive: Adjust top margin for smaller screens */
+@media (max-width: 768px) {
+  .product-detail-container {
+    margin: 7rem auto 2rem; /* More space for smaller screens */
+  }
+}
+
+
+/* Image Styling */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1rem;
+  color: #555555;
+  margin: 0.5rem 0;
+}
+
+p strong {
+  color: #333333;
+}
+
+/* Error Message Styling */
+.error {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Loader Styling (assuming you have a spinner or similar in Loader component) */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-detail-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}

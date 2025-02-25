@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";  // React will automatically resolve .jsx
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
 import Location from "./components/Location";
+import ProductDetail from "./pages/ProductDetail";
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="about" element={<AboutUs/>}/>
