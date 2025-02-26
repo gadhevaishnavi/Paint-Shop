@@ -1,8 +1,7 @@
-/* ProductDetail.css */
-
+/* Product Detail Container */
 .product-details-container {
   max-width: 500px;
-  margin: 120px auto 40px; /* Added margin-top to create space from navbar */
+  margin: 120px auto 40px; /* Ensure space from navbar */
   padding: 20px;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -59,12 +58,12 @@ strong {
   margin-top: 20px;
 }
 
-/* Responsive Design */
+/* Ensure Proper Spacing in Mobile View */
 @media (max-width: 768px) {
   .product-details-container {
     max-width: 90%;
     padding: 15px;
-    margin-top: 40px; /* Ensure spacing from navbar on smaller screens */
+    margin-top: 80px; /* Increased margin-top for space from navbar */
   }
   
   h1 {
@@ -102,12 +101,12 @@ strong {
 
 /* Buy Now Button */
 .button-group button:first-child {
-  background-color: #007bff; /* Attractive orange-red */
+  background-color: #007bff; /* Blue */
   color: white;
 }
 
 .button-group button:first-child:hover {
-  background-color: #007bff;
+  background-color: #0056b3;
 }
 
 /* Back Button */
@@ -123,15 +122,15 @@ strong {
   background-color: #444;
 }
 
-/* Responsive Design */
+/* Ensure Proper Button Layout in Mobile View */
 @media (max-width: 768px) {
   .button-group {
-    flex-direction: column; /* Stack buttons on small screens */
+    flex-direction: column; /* Stack buttons */
     gap: 10px;
   }
 
   .button-group button {
-    width: 50%; /* Full width on mobile */
+    width: 50%; /* Larger buttons for mobile */
     text-align: center;
   }
 }
