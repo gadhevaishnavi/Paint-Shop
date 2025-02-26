@@ -131,7 +131,7 @@ strong {
   }
 
   .button-group button {
-    width: 100%; /* Full width on mobile */
+    width: 50%; /* Full width on mobile */
     text-align: center;
   }
 }
