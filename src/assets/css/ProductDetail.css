@@ -63,7 +63,7 @@ strong {
   .product-details-container {
     max-width: 90%;
     padding: 15px;
-    margin-top: 50px; /* Increased margin-top for space from navbar */
+    margin-top: 80px; /* Increased margin-top for space from navbar */
   }
   
   h1 {
