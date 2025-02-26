@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import slider1 from "../assets/images/image1.jpeg";
-import slider2 from "../assets/images/image2.jpeg";
-import slider3 from "../assets/images/image3.jpeg";
+import slider1 from "../assets/images/729667.jpg";
+import slider2 from "../assets/images/2618476.jpg";
+import slider3 from "../assets/images/3102748.jpg";
 import "../assets/css/Slider.css"; // Custom CSS for styling
 
 const Slider = () => {

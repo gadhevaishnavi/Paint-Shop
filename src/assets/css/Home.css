@@ -3,7 +3,7 @@
 .main-div {
   text-align: center;
   padding: 3rem 0;
-  background-color: #f3f4f6; /* Light gray background */
+  /* background-color: #f3f4f6; Light gray background */
 }
 
 .head {
@@ -59,4 +59,20 @@
   color: #4b5563;
   font-weight: 500;
   text-align: center;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  color: #ff6600; /* Customize icon color */
+  font-size: 2rem;
+  margin-bottom: 10px;
 }

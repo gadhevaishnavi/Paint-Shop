@@ -30,12 +30,12 @@ const ProductDetail = () => {
 
   return (
     <div className="product-details-container">
-      <h1>Product Details</h1>
       <img src={product.imageUrl} alt={product.name} className="product-image" />
-      <h2>{product.name}</h2>
+      <h3>{product.name}</h3>
       <p><strong>Brand:</strong> {product.brand}</p>
       <p><strong>Price:</strong> {product.price}</p>
       <p><strong>Weight:</strong> {product.weight}</p>
+      <button>Buy Now</button>
     </div>
   );
 };

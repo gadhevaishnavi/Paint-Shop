@@ -28,12 +28,12 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        {/* <div className="footer-section contact">
+        <div className="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: info@paintperfection.com</p>
+          <p>Email: shikhareram4@gmail.com</p>
           <p>Phone: +91 8378844361</p>
           <p>Location: Nanded, Maharashtra</p>
-        </div> */}
+        </div>
 
         {/* Social Media Icons */}
         <div className="footer-section social">

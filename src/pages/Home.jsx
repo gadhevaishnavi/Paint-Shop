@@ -1,22 +1,21 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Slider from '../components/Slider'
-// import Cards from '../components/Cards'
 import Offer from './Services'
 import '../assets/css/Home.css'
 import FloatingIcon from '../components/FloatingIcon'
+import { HardHat, CheckCircle, Palette, ShieldCheck, Eye, Wrench } from "lucide-react";
 const Home = () => {
   const features = [
-    { icon: "👷", title: "Trained Professional" },
-    { icon: "✅", title: "Technical Site Evaluation" },
-    { icon: "🎨", title: "Personalized Colour Consultation" },
-    { icon: "🛡️", title: "Stringent Safety Protocol" },
-    { icon: "👀", title: "Supervised Painting" },
-    { icon: "🔧", title: "Mechanized Tools" }
+    { icon: <HardHat size={40} />, title: "Trained Professional" },
+    { icon: <CheckCircle size={40} />, title: "Technical Site Evaluation" },
+    { icon: <Palette size={40} />, title: "Personalized Colour Consultation" },
+    { icon: <ShieldCheck size={40} />, title: "Stringent Safety Protocol" },
+    { icon: <Eye size={40} />, title: "Supervised Painting" },
+    { icon: <Wrench size={40} />, title: "Mechanized Tools" }
   ];
   return (
     <>
-    
     <Navbar/>
     <Slider/>
     <Offer/>
