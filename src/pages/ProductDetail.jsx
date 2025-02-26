@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate  } from "react-router-dom";
 import axios from "axios";
 import Loader from "../components/Loader";
 import "../assets/css/ProductDetail.css";
 
 const ProductDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -35,7 +36,10 @@ const ProductDetail = () => {
       <p><strong>Brand:</strong> {product.brand}</p>
       <p><strong>Price:</strong> {product.price}</p>
       <p><strong>Weight:</strong> {product.weight}</p>
+      <div className="button-group">
       <button>Buy Now</button>
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
+      </div>
     </div>
   );
 };
