@@ -12,23 +12,31 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+
 }
 
 /* Logo Styling */
-.navbar-logo {
+.logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px; /* Rounded corners */
+  width: fit-content;
 }
 
-.navbar-logo img {
-  height: 50px;
-  width: auto;
-  transition: transform 0.3s ease-in-out;
+.logo-img {
+  max-width: 120px; /* Adjust as needed */
+  height: auto;
 }
 
-.navbar-logo img:hover {
+
+/* .navbar-logo img:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Navigation Links */
 .navbar-links {
